@@ -1,6 +1,7 @@
 plugins {
-    id "org.sonarqube" version "3.0"
+    id "org.sonarqube" version "4.2.1.3168"
     id 'org.cadixdev.licenser' version '0.6.1'
+    id "jacoco"
 }
 
 // Apply the java plugin to add support for Java
@@ -61,6 +62,15 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+jacoco {
+    toolVersion = "0.8.8"
+}
+jacocoTestReport {
+    reports {
+        xml.required = true
+    }
 }
 
 license {
