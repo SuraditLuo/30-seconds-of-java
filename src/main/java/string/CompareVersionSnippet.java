@@ -29,7 +29,7 @@ package string;
  */
 public class CompareVersionSnippet {
 
-  private static final String EXTRACT_VERSION_REGEX = ".*?((?<!\\w)\\d+([.-]\\d+)*+).*";
+  private static final String EXTRACT_VERSION_REGEX = "[^_]*?((?<!\\w)\\d{1,5}([.-]\\d{1,5}){1,5})[^_]*";
 
   /**
    * Compares two version strings.

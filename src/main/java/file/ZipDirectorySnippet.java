@@ -34,8 +34,10 @@ import java.util.zip.ZipOutputStream;
 /**
  * ZipDirectorySnippet.
  */
-public class ZipDirectorySnippet {
-
+class ZipDirectorySnippet {
+  public ZipDirectorySnippet() {
+    throw new IllegalStateException("Utility class");
+  }
   /**
    * Zip a complete directory.
    *

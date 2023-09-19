@@ -37,6 +37,13 @@ class ArrayConcatSnippetTest {
   /**
    * Tests for {@link ArrayConcatSnippet#arrayConcat(Object[], Object[])}.
    */
+
+  @Test
+  void testArrayConcatSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ArrayConcatSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testArrayConcat() {
     var integers = ArrayConcatSnippet.arrayConcat(new Integer[5], new Integer[5]);

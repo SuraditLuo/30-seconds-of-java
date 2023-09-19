@@ -25,6 +25,7 @@
 package encoding;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -36,6 +37,13 @@ class Base64EncodeSnippetTest {
   /**
    * Tests for {@link Base64EncodeSnippet#encodeBase64(String)}.
    */
+
+  @Test
+  void testBase64EncodeSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new Base64EncodeSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testBase64Encoding() {
     var encodedString = Base64EncodeSnippet.encodeBase64("TestString");

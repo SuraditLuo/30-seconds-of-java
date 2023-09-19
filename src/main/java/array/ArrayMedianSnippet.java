@@ -29,8 +29,10 @@ import java.util.Arrays;
 /**
  * ArrayMedianSnippet.
  */
-public class ArrayMedianSnippet {
-
+class ArrayMedianSnippet {
+  public ArrayMedianSnippet() {
+    throw new IllegalStateException("Utility class");
+  }
   /**
    * Returns the median of the array.
    *

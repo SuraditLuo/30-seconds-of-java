@@ -25,6 +25,7 @@
 package array;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -36,6 +37,13 @@ public class ArrayMedianSnippetTest {
   /**
    * Tests for {@link ArrayMedianSnippet#arrayMedian(int[])}.
    */
+
+  @Test
+  void testArrayMedianSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ArrayMedianSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testArrayMedian() {
     assertEquals(11, ArrayMedianSnippet.arrayMedian(new int[]{4, 17, 2, 11, 29}));

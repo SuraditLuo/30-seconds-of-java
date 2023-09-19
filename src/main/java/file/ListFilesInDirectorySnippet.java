@@ -29,8 +29,10 @@ import java.io.File;
 /**
  * ListFilesInDirectorySnippet.
  */
-public class ListFilesInDirectorySnippet {
-
+class ListFilesInDirectorySnippet {
+  public ListFilesInDirectorySnippet() {
+    throw new IllegalStateException("Utility class");
+  }
   /**
    * List files in directory.
    *

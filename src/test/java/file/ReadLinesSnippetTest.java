@@ -40,6 +40,13 @@ class ReadLinesSnippetTest {
    *
    * @throws IOException if an I/O error occurs
    */
+
+  @Test
+  void testReadLinesSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ReadLinesSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testReadLines() throws IOException {
     var somelines = ReadLinesSnippet.readLines("src/test/resources/somelines.txt");

@@ -29,8 +29,10 @@ import java.util.Arrays;
 /**
   * FindMinSnippet.
   */
-public class FindMinSnippet {
- 
+class FindMinSnippet {
+  public FindMinSnippet() {
+    throw new IllegalStateException("Utility class");
+  }
   /**
     * Returns the minimum integer from the array using reduction.
     *

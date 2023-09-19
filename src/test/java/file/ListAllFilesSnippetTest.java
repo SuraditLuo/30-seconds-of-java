@@ -25,7 +25,9 @@
 package file;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import file.ListAllFilesSnippet;
 import org.junit.jupiter.api.Test;
 
 /*
@@ -36,6 +38,13 @@ class ListAllFilesSnippetTest {
   /**
    * Tests for {@link ListAllFilesSnippet#listAllFiles(String)}.
    */
+
+  @Test
+  void testListAllFilesSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ListAllFilesSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testListAllFiles() {
     var files = ListAllFilesSnippet.listAllFiles("src/test/resources");

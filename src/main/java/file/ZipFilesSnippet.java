@@ -35,7 +35,9 @@ import java.util.zip.ZipOutputStream;
  * ZipFilesSnippet.
  */
 public class ZipFilesSnippet {
-
+  public ZipFilesSnippet() {
+    throw new IllegalStateException("Utility class");
+  }
   /**
    * Zip multiples files.
    *

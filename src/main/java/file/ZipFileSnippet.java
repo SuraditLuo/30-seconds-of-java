@@ -34,8 +34,10 @@ import java.util.zip.ZipOutputStream;
 /**
  * ZipFileSnippet.
  */
-public class ZipFileSnippet {
-
+class ZipFileSnippet {
+  public ZipFileSnippet() {
+    throw new IllegalStateException("Utility class");
+  }
   /**
    * Zip single file.
    *

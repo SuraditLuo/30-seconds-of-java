@@ -24,6 +24,7 @@
 
 package file;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
@@ -38,6 +39,13 @@ class ListDirectoriesSnippetTest {
   /**
    * Tests for {@link ListDirectoriesSnippet#listDirectories(String)}.
    */
+
+  @Test
+  void testListDirectoriesSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ListDirectoriesSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testListDirectories() {
     var files = ListDirectoriesSnippet.listDirectories("src/test/resources");

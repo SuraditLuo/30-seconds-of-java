@@ -24,14 +24,13 @@
 
 package file;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.io.File;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashSet;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 /*
@@ -42,6 +41,13 @@ class ListFilesInDirectorySnippetTest {
   /**
    * Tests for {@link ListFilesInDirectorySnippet#listFilesInDirectory(File)}.
    */
+
+  @Test
+  void testListFilesInDirectorySnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ListFilesInDirectorySnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testListFilesInDirectory() {
     var files = ListFilesInDirectorySnippet.listFilesInDirectory(

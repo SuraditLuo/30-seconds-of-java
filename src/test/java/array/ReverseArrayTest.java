@@ -38,7 +38,12 @@ class ReverseArrayTest {
 
 
   /** reverseArray should correctly reverse the entire array. **/
-
+  @Test
+  void testReverseArray() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ReverseArraySnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testReverseArrayFull() {
     Integer[] arr = {1, 2, 3, 4, 5};

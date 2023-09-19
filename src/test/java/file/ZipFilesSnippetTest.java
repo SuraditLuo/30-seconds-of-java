@@ -24,6 +24,7 @@
 
 package file;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
@@ -40,6 +41,13 @@ class ZipFilesSnippetTest {
   /**
    * Tests for {@link ZipFilesSnippet#zipFiles(String[], String)}.
    */
+
+  @Test
+  void testZipFilesSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ZipFilesSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testZipFiles() throws IOException {
     final String[] srcFilenames = {"src/test/resources/somelines.txt",

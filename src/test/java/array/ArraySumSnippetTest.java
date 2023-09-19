@@ -25,6 +25,7 @@
 package array;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -35,6 +36,13 @@ public class ArraySumSnippetTest {
   /**
    * Tests for {@link ArraySumSnippet#arraySum(int[])}.
    */
+
+  @Test
+  void testArraySumSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ArraySumSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testArraySum() {
     assertEquals(47, ArraySumSnippet.arraySum(new int[]{2, 9, 10, 11, 15}));

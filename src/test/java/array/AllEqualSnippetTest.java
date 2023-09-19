@@ -39,6 +39,13 @@ class AllEqualSnippetTest {
   /**
    * Tests for {@link AllEqualSnippet#allEqual(Object[])}.
    */
+
+  @Test
+  void testAllEqualSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new AllEqualSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testAllEqual() {
     var intArray = new Integer[5];

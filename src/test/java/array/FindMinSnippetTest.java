@@ -25,7 +25,8 @@
 package array;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
- 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import org.junit.jupiter.api.Test;
  
 /*
@@ -36,6 +37,13 @@ class FindMinSnippetTest {
   /**
     * Tests for {@link FindMinSnippet#findMin(int[])}.
     */
+
+  @Test
+  void testFindMinSnippet() {
+      assertThrows(IllegalStateException.class, () -> {
+          new FindMinSnippet(); // Replace with the actual name of your utility class
+      });
+  }
   @Test
    void test_findMin() {
     assertEquals(1, FindMinSnippet.findMin(new int[] {1, 2, 4, 9, 8, 1}));

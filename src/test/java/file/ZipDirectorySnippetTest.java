@@ -43,6 +43,13 @@ class ZipDirectorySnippetTest {
   /**
    * Tests for {@link ZipDirectorySnippet#zipDirectory(String, String)}.
    */
+
+  @Test
+  void testZipDirectorySnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new ZipDirectorySnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testZipFileDirectory() throws IOException {
     final var src = "src/test/resources/dir3";

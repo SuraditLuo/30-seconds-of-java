@@ -29,8 +29,10 @@ import java.util.Arrays;
 /**
  * AllEqualSnippet.
  */
-public class AllEqualSnippet {
-
+class AllEqualSnippet {
+  public AllEqualSnippet() {
+    throw new IllegalStateException("Utility class");
+  }
   /**
    * Returns true if all elements in array are equal.
    *

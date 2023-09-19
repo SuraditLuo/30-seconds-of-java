@@ -37,6 +37,13 @@ class MultiArrayConcatenationSnippetTest {
   /**
    * Tests for {@link MultiArrayConcatenationSnippet#multiArrayConcat(Object[], Object[][])}.
    */
+
+  @Test
+  void testMultiArrayConcatenationSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new MultiArrayConcatenationSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void testnArrayConcat() {
     var single = MultiArrayConcatenationSnippet.multiArrayConcat(new Integer[1]);

@@ -25,6 +25,7 @@
 package array;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -36,6 +37,12 @@ class FindMaxSnippetTest {
   /**
    * Tests for {@link FindMaxSnippet#findMax(int[])}.
    */
+  @Test
+  void testFindMaxSnippet() {
+    assertThrows(IllegalStateException.class, () -> {
+      new FindMaxSnippet(); // Replace with the actual name of your utility class
+    });
+  }
   @Test
   void test_findMax() {
     assertEquals(9, FindMaxSnippet.findMax(new int[] {1, 2, 4, 9, 8, 1}));
